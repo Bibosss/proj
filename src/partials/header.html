@@ -1,19 +1,19 @@
 <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+    <div class="container container-div-header">
+        <a class="header-logo" href="#">
+            <img class="img-header" src="../img/Лого.png" alt="logo" />
+            <h2 class="h2-header-logo">Fly4est</h2>
+        </a>
+        <form class="header-form">
+            <label for="header-inp">Type</label>
+            <input type="text" id="header-inp" placeholder="Search">
+            <button class="header-submit" type="submit">🔍</button>
+        </form>
+        <a class="header-basket" href="#">
+            <svg class="header-svg-basket" width="50" height="50">
+                <use href="../img/symbol-defs.svg#icon-Frame"></use>
+            </svg>
+            <h2 class="h2-basket">Basket</h2>
+        </a>
+    </div>
 </header>
