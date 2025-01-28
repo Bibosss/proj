@@ -1,128 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/proj/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/proj/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/proj/assets/styles-DvPDDfy5.css">
-  </head>
-  <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/proj/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&display=swap" rel="stylesheet" />
+
+  <script type="module" crossorigin src="/proj/index.js"></script>
+  <link rel="stylesheet" crossorigin href="/proj/assets/index-D5r-LuGq.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container container-div-header">
+        <a class="header-logo" href="#">
+            <img class="img-header" src="../img/Лого.png" alt="logo" />
+            <h2 class="h2-header-logo">Fly4est</h2>
+        </a>
+        <form class="header-form">
+            <label for="header-inp">Type</label>
+            <input type="text" id="header-inp" placeholder="Search">
+            <button class="header-submit" type="submit">🔍</button>
+        </form>
+        <a class="header-basket" href="#">
+            <svg class="header-svg-basket" width="50" height="50">
+                <use href="../img/symbol-defs.svg#icon-Frame"></use>
+            </svg>
+            <h2 class="h2-basket">Basket</h2>
+        </a>
+    </div>
 </header>
 
-
-    <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/proj/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
+  <main>
+    <section class="hero">
+    <div class="container hero-container">
+        <div class="hero-container-nav">
+            <button type="button" class="hero-btn-menu">
+                <h2 class="h2-hero-menu ">Menu</h2>
+                <svg class="hero-svg" width="40" height="40">
+                    <use href="../img/symbol-defs.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <div class="icon-arrow-narrow-left">
+                <svg class="hero-arrow" width="40" height="40">
+                    <use class="hero-arrow-left" href="../img/symbol-defs.svg#icon-arrow-narrow-left"></use>
+                </svg>
+                <p class="hero-arrow-text">
+                    Click on me
+                </p>
+            </div>
+            <ul class="hero-navigation ">
+                <li class="hero-navigation-item">
+                    <a class="hero-navigation-link" href="#about_me">About me</a>
+                </li>
+                <li class="hero-navigation-item">
+                    <a class="hero-navigation-link" href="#benefits">Benefits</a>
+                </li>
+                <li class="hero-navigation-item">
+                    <a class="hero-navigation-link" href="#options">Options</a>
+                </li>
+                <li class="hero-navigation-item">
+                    <a class="hero-navigation-link" href="#faq">FAQ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="hero-apps-div">
+            <a class="hero-tel" href="tel:+380684439426" target="_blank">+380(68)443-94-26</a>
+            <li class="hero-item">
+                <a class="hero-link" href="https://www.facebook.com/goITclub/" target="_blank">
+                    <svg class="hero-icon" width="20" height="20">
+                        <use href="../img/symbol-defs.svg#icon-youtube"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="hero-item">
+                <a class="hero-link" href="https://www.facebook.com/goITclub/" target="_blank">
+                    <svg class="hero-icon" width="20" height="20">
+                        <use href="../img/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="hero-item">
+                <a class="hero-link" href="https://www.facebook.com/goITclub/" target="_blank">
+                    <svg class="hero-icon" width="20" height="20">
+                        <use href="../img/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+        </div>
     </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
-  </div>
 </section>
+  </main>
 
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
-      </li>
-    </ul>
-  </div>
-</article>
-
-    </main>
-
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
-  </div>
-</footer>
-
-
-  </body>
+</body>
 </html>
